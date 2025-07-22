@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Buttons with Images</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      min-height: 100%;
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #000;
+      color: #fff;
+      overflow-y: auto; /* Enable scrolling */
+      padding: 20px;
+    }
+
+    /* Animated Text */
+    .animated-text {
+      width: 100%;
+      font-size: 1.5rem;
+      text-align: center;
+      font-weight: bold;
+      color: #ff6b6b;
+      text-shadow: 0 0 10px rgba(255, 107, 107, 0.8);
+      opacity: 0;
+      animation: fadeInOut 3s infinite;
+      margin-top: 20px;
+    }
+
+    @keyframes fadeInOut {
+      0% { opacity: 0; transform: translateY(-20px); }
+      50% { opacity: 1; transform: translateY(0); }
+      100% { opacity: 0; transform: translateY(20px); }
+    }
+
+    .button-container {
+      width: 100%;
+      max-width: 800px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px 0;
+    }
+
+    a.button {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      padding: 10px 25px;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #000;
+      background: linear-gradient(90deg, #ff6b6b, #f8c291);
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      width: calc(50% - 10px);
+      border: 3px solid transparent;
+      background-clip: padding-box;
+    }
+
+    a.button img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid white;
+    }
+
+    /* Hover Effects */
+    a.button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #d8a371, #6ca6e9);
+      border-color: #af7f7f;
+      animation: border-pulse 1.5s infinite;
+      font-size: 1.3rem; /* Font size animation */
+    }
+
+    a.button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.2);
+      transition: left 0.4s ease;
+    }
+
+    a.button:hover::before {
+      left: 0;
+    }
+
+    @keyframes border-pulse {
+      0% { border-color: #f89191; box-shadow: 0 0 10px rgba(248, 194, 145, 0.8); }
+      50% { border-color: #00f7ff; box-shadow: 0 0 15px rgba(255, 107, 107, 0.8); }
+      100% { border-color: #7833f7; box-shadow: 0 0 10px rgba(248, 194, 145, 0.8); }
+    }
+
+    @media (max-width: 600px) {
+      .button-container {
+        flex-direction: column;
+        gap: 15px;
+      }
+      a.button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px 20px;
+      }
+      a.button img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="animated-text">
+    🔞 ကြိုဆိုပါတယ် 💝 ကြိုက်နှစ်သက်ရာကို နိပ်ပီး 🔞 ကြည့်ရှု နိုင် ပါတယ် 🎀
+  </div>
+
+  <div class="button-container">
+    <a class="button" href="https://t.me/+hEz0pThR4BNjMmE1"><img src="icon/t.jpg" alt="ကျားရီး"> 🔞 ကျားရီး 🐅</a>
+    <a class="button" href="https://t.me/+rY3pBNRkwqdiMGNl"><img src="icon/snap.png" alt="Snap u-16"> ကလေး (Free VIP)💝</a>
+    <a class="button" href="https://t.me/+HmwfWcf3yXpkMDJl"><img src="icon/b.jpg" alt="ဘေဘီ ကားလေးများ"> ကလေးကား ဂရု 💢</a>
+    <a class="button" href=" https://t.me/+6yQsUMD0iqw1ZjI1"><img src="icon/b.jpg" alt="ဖရီးဘေဘီ"> ကလေးကားများ 🍭</a>
+    <a class="button" href="https://t.me/+NVQUr_I3KTA4ZjFl"><img src="icon/m1.jpg" alt="မှောင် ၁"> အမှောင် ၁ 🔞</a>
+    <a class="button" href="https://t.me/+sTtVE2cuFoVmMWQ9"><img src="icon/m2.jpg" alt="မှောင် ၂"> အမှောင် ၂ 🔞</a>
+    <a class="button" href="https://t.me/+SFtC-5kNh8g0MjJl"><img src="icon/m3.jpg" alt="မှောင် ၃"> အမှောင် ၃ 🔞</a>
+    <a class="button" href="https://t.me/+OL5k1h1k8JY5MDI1"><img src="icon/m4.jpg" alt="မှောင် ၄"> အမှောင် ၄ 🔞</a>
+    <a class="button" href=" https://t.me/+QzkJ8ERP03syZDM9"><img src="icon/m5.jpg" alt="မှောင် ၅"> အမှောင် ၅ 🔞</a>
+  </div>
+</body>
+</html>
